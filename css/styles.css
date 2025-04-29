@@ -1,0 +1,98 @@
+
+body{
+    background-color: #e3d5ca;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* outline: none; */
+    
+    
+}
+/* principal */
+.container{
+    background-color: #f5ebe0;
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    /* margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px; */
+    margin: 100px auto 0;
+    -webkit-box-shadow: -1px 14px 19px 3px rgba(0,0,0,0.23); 
+    box-shadow: -1px 14px 19px 3px rgba(0,0,0,0.23);
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+/* adicionar */
+.inputTask{
+    border: none;
+    border-radius: 7px;
+    border: 1px solid black;
+    width: 370px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 17px;;
+}
+
+.buttonAddTask{
+    background-color: #606c38;
+    border: none;
+    border: 1px solid #283618;
+    border-radius: 7px;
+    color: white;
+    height: 40px;
+    font-size: 17px;
+    padding: 0 15px;
+    float: right;
+    cursor: pointer;
+
+}
+.buttonAddTask:hover{
+    background-color: #283618;
+    transition: 0.3s;
+    color: #f5ebe0; 
+    opacity: 0.8;
+}
+
+.buttonAddTask:active{
+    opacity: 0.6;
+}
+
+.listTask{
+    width: 100%;
+    list-style: none;
+    margin-top: 30px;
+
+}
+
+.task{
+    background-color: #ddd0c6;
+    box-shadow:1px 4px 10px rgba(0,0,0,0.23);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    
+    
+}
+/* tarefas */
+img{
+    height: 25px;
+    opacity: 0;
+    transition:opacity 0.5s ease-in-out;
+   
+}
+.task:hover img{
+    opacity:1;
+    
+}
+
+
+.done{
+    background-color: #a7c957;
+    text-decoration: line-through;
+}
